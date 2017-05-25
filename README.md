@@ -13,11 +13,15 @@ To create these files, you need to use the 'touch' command.
     touch .bash_profile
     
 The contents of these, bashrc and bash_profile, text files need to be put in your newly created files. 
-To do that, you can open these files by typing
+To do that, you can open these files by typing:
 
     subl .bashrc
     subl .bash_profile
-    
+
+Don't worry if your subl command is not identified, you can check this link, and it explains you the steps. 
+      
+    https://gist.github.com/olivierlacan/1195304
+
 After you have pasted this in your files, and saved them, you can go ahead and restart the terminal or you can just write the command
 
     source .bashrc
