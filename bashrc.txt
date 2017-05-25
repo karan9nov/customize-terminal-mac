@@ -1,4 +1,4 @@
-echo 'Welcome Karan!'
+echo 'Welcome!'
 
 #http://tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html
 #PS1="$(tput setaf 46)\u@\h:\W -> $(tput sgr0)";
