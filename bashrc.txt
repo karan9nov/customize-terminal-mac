@@ -14,10 +14,5 @@ PS1+="\[${orange}\]:\W"     #Working directory
 PS1+="\[$(tput sgr0)\] \n> "
 export PS1;
 
-#Spark Path
-export PATH=/usr/local/scala/bin:/usr/local/spark/bin:$PATH
-#Anaconda Path
-export PATH=/Users/kchak/anaconda/bin:$PATH
-#Python path
-export PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH
+#You can have your path variables here if you want.
 export PATH
