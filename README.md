@@ -1,11 +1,9 @@
 # customize-terminal-mac
-Two files to customieze your mac terminal
 
-This repo contains two files. 
-1. bashrc
-2. bash_profile
+You need to have these two dot files in your HOME directory in order to customize your terminal
 
-These two are text files, but in order to customize your terminal, you need to create dot files in your HOME directory if they do not already exist. 
+    .bashrc
+    .bash_profile
 
 To create these files, you need to use the 'touch' command.
 
@@ -16,7 +14,6 @@ Open these files using subl command.To do that, you can open these files by typi
 
     subl .bashrc
     subl .bash_profile
-
 
 Don't worry if your subl command is not identified, you can check this link, and it explains you the steps. 
       
