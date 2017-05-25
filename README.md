@@ -15,9 +15,9 @@ Open these files using subl command.To do that, you can open these files by typi
     subl .bashrc
     subl .bash_profile
 
-Don't worry if your subl command is not identified, you can check this link, and it explains you the steps. 
+Don't worry if your subl command is not identified, you can paste the following in your terminal. You might have to change sublime text app according to the version that you have. 
       
-    https://gist.github.com/olivierlacan/1195304
+    ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/.rvm/bin/subl
 
 You need to paste this code in your newly created files:
 
