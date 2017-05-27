@@ -30,6 +30,35 @@ This is for .bash_profile
     
 This is for .bashrc
 
+    echo 'Welcome Karan!'
+
+    #Defining some aliases
+
+    # Easier navigation: .., ..., ...., ....., ~ and -
+    alias ..="cd .."
+    alias ...="cd ../.."
+    alias ....="cd ../../.."
+    alias .....="cd ../../../.."
+    alias ~="cd ~"
+    alias -- -="cd -"
+
+    alias downloads="cd ~/Downloads"
+    alias desktop="cd ~/Desktop"
+    alias fall16="cd ~/Google\ Drive/NYU/Fall\ 2016/"
+    alias spring17="cd ~/Google\ Drive/NYU/Spring\ 2017/"
+    alias fall17="cd ~/Google\ Drive/NYU/Fall\ 2017/"
+    alias j="jobs"
+    alias h="history"
+
+    #Show and hide hidden files
+    alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
+    alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
+
+    #
+
+    #Customizing Mac Terminal Starts
+    #http://tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html
+
     #defining colors
     green=$(tput setaf 46);
     yellow=$(tput setaf 226);
@@ -41,8 +70,15 @@ This is for .bashrc
     PS1+="\[$(tput sgr0)\] \n> "
     export PS1;
 
-    #You can have your PATH variables put here
+    #Adding Path Variables
+    #Spark Path
+    export PATH=/usr/local/scala/bin:/usr/local/spark/bin:$PATH
+    #Anaconda Path
+    export PATH=/Users/kchak/anaconda/bin:$PATH
+    #Python path
+    export PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH
     export PATH
+
 
 After you have pasted this in your files, and saved them, you can go ahead and restart the terminal or you can just write the command
 
