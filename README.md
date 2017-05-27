@@ -82,6 +82,6 @@ This is for .bashrc
 
 After you have pasted this in your files, and saved them, you can go ahead and restart the terminal or you can just write the command
 
-    source .bashrc
+    source ~/.bashrc
     
 You are good to go! 
