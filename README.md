@@ -10,16 +10,7 @@ To create these files, you need to use the 'touch' command.
     touch .bashrc
     touch .bash_profile
     
-Open these files using subl command.To do that, you can open these files by typing:
-
-    subl .bashrc
-    subl .bash_profile
-
-Don't worry if your subl command is not identified, you can paste the following in your terminal. You might have to change sublime text app according to the version that you have. 
-      
-    ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/.rvm/bin/subl
-
-You need to paste this code in your newly created files:
+Open these files. You need to paste this code in your newly created files:
 
 This is for .bash_profile
     
@@ -42,14 +33,6 @@ This is for .bashrc
     alias ~="cd ~"
     alias -- -="cd -"
 
-    alias downloads="cd ~/Downloads"
-    alias desktop="cd ~/Desktop"
-    alias fall16="cd ~/Google\ Drive/NYU/Fall\ 2016/"
-    alias spring17="cd ~/Google\ Drive/NYU/Spring\ 2017/"
-    alias fall17="cd ~/Google\ Drive/NYU/Fall\ 2017/"
-    alias j="jobs"
-    alias h="history"
-
     #Show and hide hidden files
     alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
     alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
@@ -71,10 +54,6 @@ This is for .bashrc
     export PS1;
 
     #Adding Path Variables
-    #Spark Path
-    export PATH=/usr/local/scala/bin:/usr/local/spark/bin:$PATH
-    #Anaconda Path
-    export PATH=/Users/kchak/anaconda/bin:$PATH
     #Python path
     export PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH
     export PATH
