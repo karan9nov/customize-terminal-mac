@@ -1,5 +1,7 @@
 # customize-terminal-mac
 
+Reference: https://github.com/ohmybash/oh-my-bash
+
 You need to have these two dot files in your HOME directory in order to customize your terminal
 
     .bashrc
