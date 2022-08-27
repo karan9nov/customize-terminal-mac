@@ -34,6 +34,41 @@ This is for .bashrc
     alias .....="cd ../../../.."
     alias ~="cd ~"
     alias -- -="cd -"
+    
+    alias python=python3
+    alias pip=pip3
+    alias bashrc="subl ~/.bashrc"
+    alias reload="source ~/.bashrc"
+
+    # GIT LOG ONELINE ALIAS
+    git() {
+        if [[ $@ == "log" ]]; then
+            command git log --oneline | more
+        else
+            command git "$@"
+        fi
+    }
+
+    # https://devconnected.com/how-to-list-docker-images/#Listing_and_Formatting_Docker_Images
+    # https://manpages.ubuntu.com/manpages/xenial/man1/docker-ps.1.html
+    # DOCKER IMAGES and PS Command
+    docker() {
+      if [[ $@ == "images" ]]; then
+        command docker images --format "table {{.ID}}\t{{.CreatedSince}}\t{{.Repository}}"
+      elif [[ $@ == "ps" ]]; then
+        command docker ps -a --format="table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}\t{{.RunningFor}}"
+      else
+        command docker "$@"
+      fi
+    }
+
+    # ADDING PATH VARIABLES
+    export PATH=/opt/homebrew/bin:$PATH
+
+    # SETTING UP JENVs
+    # export PATH="$HOME/.jenv/bin:$PATH"
+    # eval "$(jenv init -)"
+    
 
     #Show and hide hidden files
     alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
